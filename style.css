@@ -1,0 +1,581 @@
+body,
+html,
+* {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.date_time {
+    background-color: #d9d9d9;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    z-index: 4;
+    padding-left: 45%;
+    font-size: 9px;
+    text-align: center;
+}
+
+.menu {
+    display: none;
+}
+
+.menu_line1 {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+}
+
+.menu_line2 {
+    width: 20px;
+    height: 3px;
+    margin-top: 3px;
+    background-color: black;
+}
+
+.exit {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.fa-home {
+    transition: 0.5s ease-in;
+    color: black;
+}
+
+.fa-home:hover {
+    transform: scale(1.08);
+}
+
+.links {
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-right: 1%;
+}
+
+nav a {
+    text-decoration: none;
+    color:#0900ff;
+}
+
+nav a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+
+.welcome {
+    position: relative;
+    overflow-y: hidden;
+}
+
+
+div img {
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+    filter: brightness(0.4);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.text1 {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 30px;
+    color: white;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: transform 1s ease-out;
+}
+
+.info {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    overflow: hidden;
+    display: flex;
+    transform: translateY(150%);
+    transition: transform 1s ease-in;
+}
+
+.see_slips,
+.Know_about_us {
+    background-color: #0900ff;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    width: 355px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.see_slips:hover,
+.Know_about_us:hover {
+    transform: scale(0.55);
+    box-shadow: 4px 4px 14px 14px rgb(53, 41, 19);
+}
+
+.slips {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.txt {
+    width: 80%;
+    text-align: center;
+    position: relative;
+    left: 9.5%;
+    transform: translateX(-100%);
+    transition: transform 2s ease-out;
+}
+
+h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #d9d9d9;
+    color: rgb(0, 0, 0);
+}
+
+.fa-chevron-down {
+    transition: 0.5s ease-in-out;
+
+}
+
+.chevron-today {
+    rotate: 180deg;
+}
+
+.matches_text {
+    background-color: #0900ff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    padding: 20px;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.matches_background,
+.past_matches_background {
+    background-color: #0900ff;
+    color: white;
+    width: 70%;
+    position: relative;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    left: 15%;
+
+}
+
+.past_matches_background {
+    display: none;
+}
+
+.matches_table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    border-collapse: collapse;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin: auto;
+}
+
+td {
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+
+}
+
+thead tr:hover {
+    background-color: black;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #d9d9d9;
+    color: black;
+}
+
+th {
+    border-bottom: 1px solid #d9d9d9;
+    border: none;
+}
+
+.market_1 {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.todays_matches {
+    margin-top: 1%;
+}
+
+.about {
+    background-color: #0900ff;
+    position: relative;
+    margin-top: 5%;
+    color: white;
+    width: 70%;
+    left: 15%;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.about_text {
+    text-align: left;
+    position: relative;
+    left: 5px;
+}
+
+.customers_box {
+    display: flex;
+    gap: 5%;
+    position: relative;
+    right: 3%;
+
+}
+
+.customers,
+.customers2,
+.customers3 {
+    position: relative;
+    left: 25%;
+    background-color: #0900ff;
+    border-radius: 8px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    color: white;
+    width: 15%;
+    transition: 0.5s ease-in;
+    box-shadow: 0 0 20px 25px rgb(233, 227, 228);
+    text-align: center;
+}
+
+.customers:hover,
+.customers2:hover,
+.customers3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 25px rgb(202, 199, 199);
+}
+
+.customer_1 {
+    padding: 40px;
+}
+
+.customer_2 {
+    padding: 40px;
+}
+
+.customer_3 {
+    background-color: rgb(211, 7, 7);
+    padding: 45px;
+}
+
+.contacts {
+    background-color: #0900ff;
+    width: 70%;
+    margin-left: 15%;
+    color: white;
+    margin-top: 20%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    justify-items: center;
+}
+
+.icons {
+    padding: 50px;
+    display: flex;
+
+}
+
+.fab {
+    padding: 20px;
+    font-size: 15px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #E4405F;
+    color: white;
+}
+
+.fa-telegram {
+    background-color: #2f3238;
+    color: white;
+}
+
+/* screens */
+@media screen and (max-width:985px) {
+
+    .see_slips,
+    .Know_about_us {
+        width: 155px;
+    }
+
+    .table {
+        width: 80%;
+    }
+
+    .customers_box {
+        width: 150%;
+        position: relative;
+        right: 28%;
+
+    }
+
+}
+
+@media screen and (max-width:670px) {
+    .customers_box {
+        width: 130%;
+        overflow-x: scroll;
+
+    }
+
+    .customers,
+    .customers2,
+    .customers3 {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .table {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .date_time {
+       padding-left: 2%;
+    }
+
+    .info {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .navigation {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .navigation.show {
+        visibility: visible;
+        opacity: 1;
+        display: block !important;
+        background-color: black;
+        z-index: 10;
+        height: 100%;
+        width: 50%;
+        right: 0;
+        position: fixed;
+        transition: 3s ease-out;
+        top: 2%;
+        overflow-y: hidden;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 20%;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 90%;
+        gap: 20%;
+        overflow-y: hidden;
+        width: 80%;
+        margin-left: 8%;
+        font-size: 10px;
+        border-radius: 8px;
+        position: relative;
+    }
+    .links a{
+        background-color: #d9d9d9;
+    }
+    .links a span {
+        text-align: center;
+        color: #2f3238;
+        position: absolute;
+        top:23%;
+
+    }
+    .links a div {
+        text-align: center;
+        color: #2f3238;
+        position: absolute;
+        top:69%;
+
+    }
+
+    .telegram-icon, .fa-whatsapp {
+        overflow-y: hidden;
+        background: transparent;
+        margin-left: 80%;
+        width: 2px;
+        height: 2px;  
+    }
+    .telegram-icon{
+          margin-bottom: 3%;
+    }
+    .fa-whatsapp{
+        margin-bottom:7% ;
+    }
+
+    .About {
+        margin-top: 2%;
+    }
+
+    .home-li {
+        background-color: black;
+    }
+
+    nav a {
+        color: white;
+        background-color: #0900ff;
+    }
+
+    a {
+        padding: 1em 1em;
+        margin-bottom: 1%;
+        text-decoration: none;
+    }
+
+    .exit {
+        display: none;
+        position: fixed;
+        top: 9px;
+        right: 30px;
+        z-index: 10;
+        cursor: pointer;
+    }
+   .fa-home {
+        color: white;
+    }
+
+    .menu {
+        display: block;
+        justify-items: right;
+        position: fixed;
+        top: 2%;
+        left: 90%;
+        z-index: 6;
+        cursor: pointer;
+    }
+
+    .exit-menu {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
+    .exit-menu.show {
+        visibility: visible;
+        opacity: 1;
+        background-color: rgb(0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        z-index: 9;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 4.5%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+
+    .table {
+        min-width: 110%;
+        overflow-x: scroll;
+        font-size: 10px;
+    }
+
+    .market_1 {
+        font-size: 9px;
+    }
+
+    .matches_text {
+        font-size: 12px;
+    }
+
+    .customers_box {
+        display: block;
+        width: 100%;
+        position: relative;
+        left: 0.5%;
+    }
+
+    .customers,
+    .customers2,
+    .customers3 {
+        width: 50%;
+    }
+}
