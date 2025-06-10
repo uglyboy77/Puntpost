@@ -73,7 +73,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color:#0900ff;
+    color: #0900ff;
 }
 
 nav a:hover {
@@ -409,7 +409,7 @@ h2 {
 
 @media screen and (max-width:500px) {
     .date_time {
-       padding-left: 2%;
+        padding-left: 2%;
     }
 
     .info {
@@ -456,36 +456,42 @@ h2 {
         border-radius: 8px;
         position: relative;
     }
-    .links a{
+
+    .links a {
         background-color: #d9d9d9;
     }
+
     .links a span {
         text-align: center;
         color: #2f3238;
         position: absolute;
-        top:23%;
+        top: 23%;
 
     }
+
     .links a div {
         text-align: center;
         color: #2f3238;
         position: absolute;
-        top:69%;
+        top: 69%;
 
     }
 
-    .telegram-icon, .fa-whatsapp {
+    .telegram-icon,
+    .fa-whatsapp {
         overflow-y: hidden;
         background: transparent;
         margin-left: 80%;
         width: 2px;
-        height: 2px;  
+        height: 2px;
     }
-    .telegram-icon{
-          margin-bottom: 3%;
+
+    .telegram-icon {
+        margin-bottom: 3%;
     }
-    .fa-whatsapp{
-        margin-bottom:7% ;
+
+    .fa-whatsapp {
+        margin-bottom: 7%;
     }
 
     .About {
@@ -515,7 +521,8 @@ h2 {
         z-index: 10;
         cursor: pointer;
     }
-   .fa-home {
+
+    .fa-home {
         color: white;
     }
 
@@ -548,6 +555,7 @@ h2 {
         right: 0;
         top: 4.5%;
     }
+
     h1 {
         font-size: 20px;
     }
