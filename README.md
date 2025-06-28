@@ -6,7 +6,7 @@ A site created for a client to share his betting odds.
 🔗<strong>Overview</strong> <br>
 <hr>
 This project was developed by myself <b>(Baffour Brenya Agyenim Boateng)</b> on 10/06/25.<br>
-<p>UGLYBOY-PORTFOLIO is a simple multi-paged website designed to hold my projects,my abilities and skills in tech world.
+<p>PUNTPOST is a simple  website designed to hold bet suggestions and predictions in sports.
 It was made up by HTML,CSS & JS. </p>
 <hr>
 🔗<strong>Features</strong> <br>
